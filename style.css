@@ -1,0 +1,116 @@
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: rgb(47, 79, 79);
+    background-color: rgb(255, 233, 206);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+/* for testing div positions
+*/
+p,
+div {
+    border: 1px solid red;
+}
+
+h1,
+.card {
+    display: flex;
+    flex-flow: row nowrap;
+    /* align-items: stretch; */
+    background-color: rgb(219, 202, 126);
+    border: 12px solid rgb(155, 167, 114);
+    border-radius: 25px;
+    padding: 20px;
+    gap: 20px;
+}
+
+#pet,
+#stats {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+#stats {
+    box-sizing: border-box;
+    padding: 16px;
+    display: flex;
+    /* flex-flow: column nowrap; */
+    flex-flow: row wrap;
+    background-color: rgb(221, 210, 162);
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.liKey,
+.liValue {
+    margin: 5px 0;
+}
+
+.liKey {
+    flex: 0 0 auto;
+    align-content: center;
+}
+
+.liValue {
+    flex: 0 0 65%;
+}
+
+#petName{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/* .subhead {
+    display: flex;
+    gap: 10px;
+    flex-flow: row nowrap;
+} */
+
+/* #species,
+#status {
+    flex-basis: 50%;
+} */
+
+.button-div {
+    margin-top: 50px;
+    display: grid;
+    /* display: flex; */
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+    /* justify-items: center; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* align-content: center; */
+    /* grid-auto-flow: row; */
+}
+
+#newPetBtn {
+    grid-column-start: span 3;
+    justify-self: stretch;
+}
+
+button {
+    padding: 16px;
+    background-color: rgb(228, 184, 90);
+    color: rgb(47, 79, 79);
+    font-size: 24px;
+    letter-spacing: 2px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 6px 0 0 rgb(132, 158, 173);
+}
+
+button:hover {
+    background-color: rgb(211, 170, 83);
+}
+
+button:active {
+    transform: translateY(3px);
+    box-shadow: 0 3px 0 0 rgb(80, 102, 107);
+}
