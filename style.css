@@ -29,6 +29,13 @@ h1,
     gap: 20px;
 }
 
+#fullness,
+#happiness,
+#energy {
+    background: linear-gradient(90deg, red 0%, yellow 70%, green 100%);
+    align-items: center;
+}
+
 #pet,
 #stats {
     width: 300px;
@@ -81,7 +88,7 @@ h1,
     margin-top: 50px;
     display: grid;
     /* display: flex; */
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     /* justify-items: center; */
     /* align-items: center; */
@@ -103,14 +110,15 @@ button {
     letter-spacing: 2px;
     border: 0;
     border-radius: 8px;
-    box-shadow: 0 6px 0 0 rgb(132, 158, 173);
+    box-shadow: 0 6px 5px 0 rgb(132, 158, 173);
 }
 
 button:hover {
-    background-color: rgb(211, 170, 83);
+    filter: brightness(90%);
+    /* background-color: rgb(211, 170, 83); */
 }
 
 button:active {
     transform: translateY(3px);
-    box-shadow: 0 3px 0 0 rgb(80, 102, 107);
+    box-shadow: 0 3px 5px 0 rgb(80, 102, 107);
 }
